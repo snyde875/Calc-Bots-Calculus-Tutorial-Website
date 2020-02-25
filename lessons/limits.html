@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Limits</title>
+    <link rel="stylesheet" href="../styles/calcbot.css">
+    <link rel="stylesheet" href="../styles/lesson-style.css">
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      processEscapes: true
+    }
+  });
+    </script>
+
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <style>
+        #wrapper {
+            width: 500px;
+            height: 100px;
+        }
+
+        #title-wrapper {
+            width: 400px;
+        }
+
+        #previous {
+            width: 300px;
+        }
+
+        #next {
+            width: 350px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav-wrapper">
+        <ul>
+            <li>
+                <h1>Calc Bots</h1>
+            </li>
+            <li><a class="nav-zoom" href="../index.html">Home</a></li>
+            <li><a class="nav-zoom" href="../lessons.html">Lessons</a></li>
+            <li><a class="nav-zoom" href="">Donate</a></li>
+            <li><a class="nav-zoom" href="">About</a></li>
+        </ul>
+        <div class="clear">
+        </div>
+    </nav>
+    <div id="wrapper">
+        <header id="title-wrapper">
+            <h1>Limits</h1>
+        </header>
+    </div>
+    <main>
+        <div class="storybox-wrapper">
+            <article class="left-article-wrapper box-zoom">
+                <div class="left-imgbox">
+                    <img src="../images/example1-equation.png">
+                </div>
+                <div class="left-textbox">
+                    <p>So I stumbled across this limit notation stuff above, but I'm not really sure what it means. I think we should just ignore it; doesn't look important to me uwu</p>
+                </div>
+            </article>
+
+
+            <article class="right-article-wrapper box-zoom">
+                <div class="right-imgbox">
+                    <img src="../images/example1-graph.gif">
+                </div>
+                <div class="right-textbox fade">
+                    <p>No, QT! The limit is a core Calculus concept, so you need to make sure you understand it! The concept is simple. Essentially what we're asking is this: <span class="important">as our x-value approaches a particular value, what is our expected y-value?</span> Look at the graph above. As our x-value approaches 1 for the function $x^2$, what is our expected y-value? As we get closer and closer to an x-value of 1, it appears as though we're getting closer and closer to a y-value of 1 as well. The same is true as we approach the limit from the right side. Since it seems like we're approaching the same y-value from both sides, the limit must be one. Above is a graphically representation of this process.</p>
+                </div>
+            </article>
+        </div>
+        <div class="storybox-wrapper">
+            <article class="left-article-wrapper box-zoom">
+                <div class="left-imgbox">
+                    <img src="../images/example2-graph.gif">
+                </div>
+                <div class="left-textbox">
+                    <p>That's great and all, but what if the graph is broken? uwu The actual y-value of this function when $x$ equals 1 is 0, so does that mean that the limit is 0 too? uwu</p>
+                </div>
+            </article>
+
+
+            <article class="right-article-wrapper box-zoom">
+                <div class="right-imgbox">
+                    <img src="../images/example2-equation.png">
+                </div>
+                <div class="right-textbox fade">
+                    <p>Nope. In the case you brought up, the limit would still be one. <span class="important">The actual y-value of the function isn't important; what's important is the y-value that it looks like we're approaching.</span> Note that the limit for this function as $x$ approaches 1 would still be 1 even if there was just a hole when $x$ equaled 1.</p>
+                    <p>We can evaluate limits without graphs too if we just have the equations. In the example above, we have a function that's entirely $x^2$ for all x-values except one. As a result, we take the limit as x approaches one for both equations. <span class="important">If they're equal</span>, the limit exists!</p>
+                </div>
+            </article>
+        </div>
+        <div class="storybox-wrapper">
+            <article class="left-article-wrapper box-zoom">
+                <div class="left-imgbox">
+                    <img src="../images/example3-graph.gif">
+                </div>
+                <div class="left-textbox">
+                    <p>That's great and all, but what if I rip the graph apart like I did above? uwu What would the limit be as $x$ approaches one? Is it one? Two? A million? Or did I break it? uwu</p>
+                </div>
+            </article>
+
+
+            <article class="right-article-wrapper box-zoom">
+                <div class="right-imgbox">
+                    <img src="../images/example3-equation.png">
+                </div>
+                <div class="right-textbox fade">
+                    <p>Would you stop making things so complicated? This example isn't all that different from the one before. If we look at things graphically, it looks as though we're approaching a y-value of one as $x$ approaches one from the left. However, if we approach the same x-value from the right, it looks as though we're approaching a y-value of 2. <span class="important">Since the right-sided limit doesn't match the left-sided limit, no limit exists, even if a y-value exists at $x = 1$.</span> We can come to the same conclusion by evaluating things algebracially like in the example before. </p>
+                </div>
+            </article>
+        </div>
+        <div class="storybox-wrapper">
+            <article class="left-article-wrapper box-zoom">
+                <div class="left-imgbox">
+                    <img src="../images/example4-graph.gif">
+                </div>
+                <div class="left-textbox">
+                    <p>Is this even math Bunn? It seems kinda headass. What if I want $x$ to approach a super duper big value like a billion? uwu <span class="important">What if I want my x-value to approach <em>infinity? OwO</em></span> What's the limit then?</p>
+                </div>
+            </article>
+
+
+            <article class="right-article-wrapper box-zoom">
+                <div class="right-imgbox">
+                    <img src="../images/example4-table.png">
+                </div>
+                <div class="right-textbox fade">
+                    <p>Well, it depends on the graph. With the function $x^3$ that you found, as $x$ approaches positive infinity, it appears as though $y$ just approaches positive infinity as well. Look at this table of increasing x-values for $x^3$. As our x-value gets bigger, so does our y-value. As a result, if $x$ gets infinitely big, then $y$ should also get infinitely big. <span class="important">The limit in this case would be unbounded.</span> Note that this isn't the case for every scenario where $x$ approaches infinity!</p>
+                </div>
+            </article>
+        </div>
+        <div class="storybox-wrapper">
+            <article class="left-article-wrapper box-zoom">
+                <div class="left-imgbox">
+                    <img src="../images/example5-graph.gif">
+                </div>
+                <div class="left-textbox">
+                    <p>Oh. Well that's kind of anti-climatic uwu Well, since you're making me do this limit garbage, I guess I'll give it a try. For the function of $\sqrt{x}$, the limit is 0 as $x$ approaches 0 uwu.</p>
+                </div>
+            </article>
+
+
+            <article class="right-article-wrapper box-zoom">
+                <div class="right-imgbox">
+                    <img src="../images/example5-equation.png">
+                </div>
+                <div class="right-textbox fade">
+                    <p>I appreciate the effort QT, but that's not the right answer. <span class="important">Remember when I said that the left-sided limit needs to match the right-sided limit?</span> Well, in this case, there isn't a left-sided limit because <span class="important">there's nothing to the left of $x$ at 0.</span> Since we can't evaluate the left-sided limit, the limit does not exist. This will be true for all endpoints on all graphs. However, I will admit that you're partially correct. If we're just talking about the right-sided limit as $x$ approaches 0, then yes, the limit is 0.</p>
+                </div>
+            </article>
+        </div>
+        <div class="storybox-wrapper">
+            <article class="left-article-wrapper box-zoom">
+                <div class="left-imgbox">
+                    <img src="../images/example6-graph.gif">
+                </div>
+                <div class="left-textbox">
+                    <p>I'mma keep it real with you chief. While you were talking about that limit garbage in the example before, I found this graph and I've no fucking clue what's going on uwu What's the limit as $x$ approaches 0 for the graph<br>$sin$(<sup>1</sup>&frasl;<sub>x</sub>) ?</p>
+                </div>
+            </article>
+
+
+            <article class="right-article-wrapper box-zoom">
+                <div class="right-imgbox">
+                    <img src="../images/example6-closeup.png">
+                </div>
+                <div class="right-textbox fade">
+                    <p>See? This is why limits are important. <span class="important">It's impossible to evaluate this function at $x = 0$ because you can't divide by 0.</span> As a result, let's use limits to approximate. In the graph you have, it's difficult to tell what y-value we're approaching. But look at this close-up of the same function. <span class="important">The closer we get to 0, the faster the graph oscillates between 1 and -1.</span> As a result, when $x = 0$, we can probably conclude that the graph is oscillating infinitely between 1 and -1. <span class="important">The limit does not exist in the case of oscillation.</span></p>
+                </div>
+            </article>
+        </div>
+        <div class="storybox-wrapper">
+
+            <article class="left-article-wrapper box-zoom">
+                <div class="left-imgbox">
+                    <img src="../images/cutiepieuwu.png">
+                </div>
+                <div class="left-textbox">
+                    <p>That was great and all, but let's move on; this is getting boring uwu You told me that we'd be finding the slopes of curves, and <span class="important">all we've been doing is this mumbo jumbo limit bullshit that you just pulled out of your ass uwu</span></p>
+                </div>
+            </article>
+
+
+            <article class="right-article-wrapper box-zoom">
+                <div class="right-imgbox">
+                    <img src="../images/conclusion-equation.png">
+                </div>
+                <div class="right-textbox fade">
+                    <p>It's not bullshit and I did not pull it out of my ass! It's a real concept and it's very important! Understanding the concept of limits allowed mathematicians to create a method for finding the slopes of curved functions at particular points. In fact, <span class="important">the equation above</span> is an example! Once we understand how to use this limit definition, we can figure out shortcuts to it faster and easier to find the slope of curved functions at particular points.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+    <nav id="footnav-wrapper">
+        <ul>
+            <li id="previous"><a href="intro.html">Previous Lesson - Introduction</a></li>
+            <li id="next"><a href="">Next Lesson - Polynomial Derivatives</a></li>
+        </ul>
+        <div class="clear">
+        </div>
+    </nav>
+    <footer id="foot-wrapper">
+        <p>All images used from Desmos</p>
+        <p>Math symbols acquired using MathJax</p>
+        <p>All Rights Reserved</p>
+    </footer>
+</body></html>

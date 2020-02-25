@@ -1,0 +1,170 @@
+.important {
+    color: white;
+    font-weight: bold;
+}
+
+.fade {
+    position: relative;
+}
+
+.fade:after {
+    content: "";
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    height: 1.3em;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #31CEE8 50%);
+}
+
+
+
+
+.storybox-wrapper {
+    width: 900px;
+    height: 645px;
+
+    margin: auto;
+
+    background-color: #414141;
+
+    color: black;
+    text-align: center;
+
+    margin-bottom: 100px;
+
+    box-shadow: 5px 5px 10px;
+}
+
+
+
+
+.left-article-wrapper {
+    width: 450px;
+    height: 665px;
+
+    float: left;
+}
+
+.left-imgbox {
+    background-color: black;
+
+    width: 400px;
+    height: 400px;
+
+    text-align: center;
+
+    margin: auto;
+    margin-top: 5%;
+
+    box-shadow: 5px 5px 10px;
+}
+
+.left-textbox {
+    background-color: #42F9FF;
+    color: black;
+
+    width: 340px;
+    /*    height: 140px;*/
+    height: 8.3em;
+
+    line-height: 20px;
+
+    clear: left;
+
+    margin: auto;
+    padding: 30px;
+
+    border-top: black solid 2px;
+    box-shadow: 5px 5px 10px;
+}
+
+
+
+
+.right-article-wrapper {
+    width: 450px;
+    height: 665px;
+
+    float: right;
+}
+
+.right-article-wrapper:hover .right-textbox {
+    overflow: visible;
+    height: auto;
+}
+
+.right-imgbox {
+    background-color: black;
+
+    width: 400px;
+    height: 400px;
+
+    text-align: center;
+
+    margin: auto;
+    margin-top: 5%;
+
+    box-shadow: 5px 5px 10px;
+}
+
+.right-textbox {
+    background-color: #31CEE8;
+    color: black;
+
+    width: 340px;
+    height: 8.3em;
+
+    line-height: 20px;
+    text-align: center;
+
+    margin: auto;
+    padding: 30px;
+
+    border-top: black solid 2px;
+    box-shadow: 5px 5px 10px;
+
+    overflow: hidden;
+
+    transition: all 5s ease;
+}
+
+
+
+
+#previous {
+    float: left;
+    width: 200px;
+
+    text-align: center;
+    background: linear-gradient(#3ECFFF, #3ECFFF 50%, #333 50%, #333);
+    background-size: 100% 200%;
+
+
+    transition: all 0.2s ease;
+}
+
+#next {
+    float: right;
+    width: 200px;
+
+    text-align: center;
+    background: linear-gradient(#3ECFFF, #3ECFFF 50%, #333 50%, #333);
+    background-size: 100% 200%;
+
+    transition: all 0.2s ease;
+
+}
+
+#previous a,
+#next a {
+    display: block;
+}
+
+#previous:hover,
+#next:hover {
+    background-position: 100% 100%;
+}
+
+

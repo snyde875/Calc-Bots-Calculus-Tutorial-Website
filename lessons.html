@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/calcbot.css">
+    <style>
+        #wrapper {
+            width: 500px;
+            height: 100px;
+        }
+
+        #title-wrapper {
+            width: 400px;
+        }
+
+        #table-of-contents {
+            background-color: #414141;
+
+            width: 500px;
+
+            margin: auto;
+            margin-bottom: 100px;
+            padding: 50px;
+
+
+            text-align: center;
+            line-height: 50px;
+
+            box-shadow: 5px 5px 10px;
+        }
+
+        #table-of-contents ul {
+            list-style: none;
+        }
+        
+        
+        #table-of-contents a {
+            text-decoration: none;
+            display: block;
+        }
+
+        #table-of-contents ul li a:link {
+            color: white;
+        }
+
+        #table-of-contents a:visited {
+            color: white;
+        }
+
+        #table-of-contents a:hover {
+            color: black;
+            font-weight: bold;
+            font-size: 14pt;
+        }
+
+        #table-of-contents a:active {
+            color: black;
+        }
+
+
+        
+        
+        .box {
+            background-color: #333333;
+            background: linear-gradient(90deg, #333333, #333333 50%, #38EBDC 50%, #38EBDC);
+            background-size: 200% 100%;
+
+            transition: all 0.5s ease;
+
+            border-top: 2px solid black;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+
+            box-shadow: 5px 5px 10px;
+            transform: 2s;
+        }
+
+        .box:hover {
+            background-position: 100% 100%;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav-wrapper">
+        <ul>
+            <li>
+                <h1>Calc Bots</h1>
+            </li>
+            <li><a class="nav-zoom" href="index.html">Home</a></li>
+            <li><a id="current-page" href="../lessons.html">Lessons</a></li>
+            <li><a class="nav-zoom" href="">Donate</a></li>
+            <li><a class="nav-zoom" href="">About</a></li>
+        </ul>
+        <div class="clear">
+        </div>
+    </nav>
+    <div id="wrapper">
+        <div id="title-wrapper">
+            <h1>Lesson List</h1>
+        </div>
+    </div>
+    <div id="table-of-contents">
+        <ul>
+            <li class="box"><a href="lessons/intro.html">Introduction</a></li>
+            <li class="box"><a href="lessons/limits.html">Section One: Limits</a></li>
+            <li class="box"><a href="">Section Two: Derivatives of Polynomials</a></li>
+            <li class="box"><a href="">Section Three: Rules of Derivatives</a></li>
+            <li class="box"><a href="">Section Four: Derivatives of Trigonometric Functions</a></li>
+            <li class="box" style="border-bottom:2px black solid"><a href="">Section Five: Integrals</a></li>
+        </ul>
+    </div>
+    <nav id="footnav-wrapper">
+        <p>&nbsp;</p>
+    </nav>
+    <footer id="foot-wrapper">
+        <p>All images used from Desmos</p>
+        <p>Math symbols acquired using MathJax</p>
+        <p>All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
